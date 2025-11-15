@@ -1,5 +1,16 @@
+# Ambiente virtual
 .venv/
+
+# Checkpoints de notebooks
 notebooks/.ipynb_checkpoints/
+
+# Dados — ignorar conteúdo, mas manter pastas
 data/models/*
 data/raw/*
 data/processed/*
+
+# Mas permitir o .gitkeep
+!data/models/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
