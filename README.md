@@ -27,6 +27,31 @@ O objetivo deste sistema é analisar dados históricos para **prever violações
 
 -----
 
+## 📁 Estrutura do Projeto
+
+```text
+projeto/
+├── data/
+│   ├── raw/                 # Dados brutos das APIs
+│   ├── processed/           # Dados processados
+│   └── models/              # Modelos treinados
+│
+├── src/
+│   ├── data_collection.py   # Coleta de APIs
+│   ├── data_processing.py   # Processamento
+│   ├── ml_pipeline.py       # Pipeline ML
+│   └── dashboard.py         # Dashboard (Dash)
+│
+├── notebooks/
+│   ├── eda.ipynb            # Análise exploratória
+│   └── model_evaluation.ipynb
+│
+├── reports/
+│   └── analise_preditiva.pdf
+│
+└── requirements.txt
+```
+
 ## 🚀 Instalação e Execução
 
 Siga os passos abaixo para configurar e executar o projeto localmente.
