@@ -33,9 +33,13 @@ def load_ibama_data(directory_path):
     
     for file_path in csv_files:
         try:
-            df_temp = pd.read_csv(file_path, encoding='latin1', sep=';', low_memory=False)
-        except UnicodeDecodeError:
+            # --- CORREÇÃO ---
+            # Tenta UTF-8 primeiro, que é o correto para 'Infração'
             df_temp = pd.read_csv(file_path, encoding='utf-8', sep=';', low_memory=False)
+        except UnicodeDecodeError:
+            # Se falhar, tenta latin1 como fallback
+            df_temp = pd.read_csv(file_path, encoding='latin1', sep=';', low_memory=False)
+            # --- FIM DA CORREÇÃO ---
         except Exception as e:
             print(f"  Erro ao ler {file_path}: {e}. Pulando este arquivo.")
             continue
