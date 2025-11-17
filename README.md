@@ -65,19 +65,25 @@ Siga os passos abaixo para configurar e executar o projeto localmente.
 
 ```bash
 git clone https://github.com/jjeancarlos/ecopeak.git
+```
+```bash
 cd ecopeak/
 ```
 
 ### 3\. Configurar o Ambiente Virtual
 
-```bash
-# Criar o ambiente
-python3 -m venv .venv
 
-# Ativar o ambiente (Linux/macOS)
+### 3.1 Criar o ambiente
+```bash
+python3 -m venv .venv
+```
+### 3.2 Ativar o ambiente (Linux/macOS)
+```bash
 source .venv/bin/activate
-# ou (Windows)
-# .\.venv\Scripts\activate
+```
+### 3.3 ou no Windows
+```bash
+.\.venv\Scripts\activate
 ```
 
 ### 4\. Instalar as Dependências
@@ -130,7 +136,7 @@ Inicia a aplicação web do Streamlit.
 streamlit run src/dashboard.py
 ```
 
-Acesse [http://localhost:8501](https://www.google.com/search?q=http://localhost:8501) no seu navegador.
+Acesse `http://localhost:8501` no seu navegador.
 
 -----
 
@@ -138,8 +144,8 @@ Acesse [http://localhost:8501](https://www.google.com/search?q=http://localhost:
 
 Para uma análise exploratória (EDA) interativa ou para ver a avaliação detalhada dos modelos (Matriz de Confusão, Feature Importance), utilize os notebooks.
 
+### Inicia o servidor do Jupyter (na pasta `ecopeak/`)
 ```bash
-# Inicia o servidor do Jupyter (na pasta ecopeak/)
 jupyter lab
 ```
 
