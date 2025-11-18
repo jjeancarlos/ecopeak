@@ -1,5 +1,6 @@
 # Ambiente virtual
 .venv/
+venv/
 
 # Checkpoints de notebooks
 notebooks/.ipynb_checkpoints/
