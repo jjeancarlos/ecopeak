@@ -225,4 +225,4 @@ Abra:
 # 📜 **Licença**
 
 Este projeto está licenciado sob a **MIT License**.
-Veja o arquivo `LICENSE` para mais detalhes.
+Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
